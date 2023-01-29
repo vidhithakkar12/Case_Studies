@@ -1,4 +1,5 @@
 Telecom Churn Case Study
+
 Problem Statement
  
 
@@ -41,6 +42,7 @@ This project is based on the Indian and Southeast Asian market.
  
 
 Definitions of Churn
+
 There are various ways to define churn, such as:
 
 Revenue-based churn: Customers who have not utilised any revenue-generating facilities such as mobile internet, outgoing calls, SMS etc. over a given period of time. One could also use aggregate metrics such as ‘customers who have generated less than INR 4 per month in total/average/median revenue’.
@@ -63,7 +65,8 @@ In this project, you will use the usage-based definition to define churn.
 
  
 
-High-value Churn
+High-value Churn:
+
 In the Indian and the southeast Asian market, approximately 80% of revenue comes from the top 20% customers (called high-value customers). Thus, if we can reduce churn of the high-value customers, we will be able to reduce significant revenue leakage.
 
  
@@ -72,7 +75,8 @@ In this project, you will define high-value customers based on a certain metric 
 
  
 
-Understanding the Business Objective and the Data
+Understanding the Business Objective and the Data:
+
 The dataset contains customer-level information for a span of four consecutive months - June, July, August and September. The months are encoded as 6, 7, 8 and 9, respectively. 
 
 
@@ -80,7 +84,8 @@ The business objective is to predict the churn in the last (i.e. the ninth) mont
 
  
 
-Understanding Customer Behaviour During Churn
+Understanding Customer Behaviour During Churn:
+
 Customers usually do not decide to switch to another competitor instantly, but rather over a period of time (this is especially applicable to high-value customers). In churn prediction, we assume that there are three phases of customer lifecycle :
 
 The ‘good’ phase: In this phase, the customer is happy with the service and behaves as usual.
@@ -95,7 +100,8 @@ In this case, since you are working over a four-month window, the first two mont
 
  
 
-Data Dictionary
+Data Dictionary:
+
 The data dictionary is provided for reference. The data dictionary contains meanings of abbreviations. Some frequent ones are loc (local), IC (incoming), OG (outgoing), T2T (telecom operator to telecom operator), T2O (telecom operator to another operator), RECH (recharge) etc.
 
  
@@ -104,7 +110,8 @@ The attributes containing 6, 7, 8, 9 as suffixes imply that those correspond to 
 
  
 
-Data Preparation
+Data Preparation:
+
 The following data preparation steps are crucial for this problem:
 
  
@@ -142,7 +149,8 @@ After tagging churners, remove all the attributes corresponding to the churn pha
 
  
 
-Modelling
+Modelling:
+
 Build models to predict churn. The predictive model that you’re going to build will serve two purposes:
 
 It will be used to predict whether a high-value customer will churn or not, in near future (i.e. churn phase). By knowing this, the company can take action steps such as providing special plans, discounts on recharge etc.
